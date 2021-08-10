@@ -11,4 +11,5 @@ setInterval(clock, 500);
 
 //-----------------------------------------------------------------------------------------------
 
-const nowTime = new Date();
+const nowTime = new Date().getTime();
+const endTime = new Date()
