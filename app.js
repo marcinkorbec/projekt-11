@@ -18,6 +18,6 @@ setInterval(clock, 500);
     const nowTime = new Date().getTime();
     const time = endTime - nowTime;
     const days = Math.floor((endTime/(1000*60*60*24)) - (nowTime/(1000*60*60*24)));
-    spanD.textContent=days;
+    spanD.textContent=`${days} dni,`;
   })
 }
