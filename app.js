@@ -12,9 +12,12 @@ setInterval(clock, 500);
 //-----------------------------------------------------------------------------------------------
 {
   const endTime = new Date('2021-12-31 23:59:59').getTime();
+  const spanD = document.querySelector('span.d')
+
   setInterval(() => {
     const nowTime = new Date().getTime();
-    const time = Math.floor((endTime - nowTime)/1000);
-    console.log(time);
+    const time = endTime - nowTime;
+    const days = Math.floor((endTime/(1000*60*60*24)) - (nowTime/(1000*60*60*24)));
+    spanD.textContent=days;
   })
 }
